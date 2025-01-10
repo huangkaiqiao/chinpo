@@ -4,7 +4,6 @@ import 'dart:typed_data';
 
 import 'package:chinpo/src/AEAD.dart';
 import 'package:collection/collection.dart';
-import 'package:convert/convert.dart';
 
 /// Checks if you are awesome. Spoiler: you are.
 class Awesome {

@@ -1,9 +1,7 @@
 import 'dart:math';
 import 'dart:typed_data';
 import 'package:collection/collection.dart';
-import 'package:convert/convert.dart';
 import 'package:fixnum/fixnum.dart';
-import 'package:fixnum/src/int64.dart';
 import 'package:pointycastle/export.dart';
 
 import 'Bytes.dart';

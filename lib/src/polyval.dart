@@ -8,7 +8,7 @@ import 'bytes.dart';
 // Does its own byte-order conversion to avoid confusion.
 class Polyval {
   static final Int64 E = Int64(0xe100000000000000);
-  static final Int64 E1 = Int64(0xe1000000);
+  static final Int64 e1 = Int64(0xe1000000);
   late final Int64 h0;
   late final Int64 h1;
   late Int64 s0 = Int64(0);
@@ -33,7 +33,7 @@ class Polyval {
     c = b << 31;
     b = v3;
     v3 = (b.shiftRightUnsigned(1)) | c;
-    v0 ^= (b << 31 >> 8 & E1);
+    v0 ^= (b << 31 >> 8 & e1);
     // print("v0:$v0, v1:$v1, v2:$v2, v3:$v3");
 
     h0 = ((v0 & 0xffffffff).toInt64() << 32) | (v1.toInt64() & 0xffffffff);
